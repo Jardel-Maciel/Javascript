@@ -4,33 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de Nacionalidade</title>
+    <style>
+        @charset "UTF-8";
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;        
+        }
+        body{
+            background-color: rgb(29, 63, 63);
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        main{
+            background-color: grey;
+            width: 500px;
+            height: 300px;
+            margin: auto;
+            text-align: center;
+            border-radius: 0px 30px;
+            box-shadow: 3px 3px 3px 4px rgba(0, 0, 0, 0.301);
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+        #ipais{
+            padding: 10px;             
+        }
+        #botao{
+            margin-top: 10px;
+            padding: 10px;
+            background-color: aquamarine;
+            border: none;
+            border-radius: 3px;
+            transition: .3s;
+        }
+        #botao:hover{
+            background-color: aqua;
+        }
+        div#res{
+            margin-top: 20px;
+            background-color: aqua;
+            width:90px;
+            height: 50px;
+            border-radius: 0px 10px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+            
+
+        }
+
+
+    </style>
 </head>
 <body>
-    <h1>Teste aqui sua Nacionalidade</h1>
-    Pais: <input type="text" name="pais" id="ipais">
-    <input type="button" value="verificar" onclick="verificar()">
-    <div id="res">
-
-    </div>
-    
-
-    <script>
-        function verificar(){
-            var pais = window.document.getElementById('ipais')
-            var res = window.document.getElementById('res')
-            var pais = (ipais.value)
-            if (pais === 'Brasil'){
-                res.innerHTML = 'Brasileiro'
-            }else{
-                res.innerHTML = 'Estrangeiro'
-            }
-            
-        }
-       
+    <main>
+        <h1>Teste aqui sua Nacionalidade</h1>
+        Pais: <input type="text" name="pais" id="ipais">
+        <input type="button" value="verificar" onclick="verificar()" id="botao">
+        <div id="res">
+        </div>
         
-    
-    </script>
-    
-    
+        <script>
+            function verificar(){
+                var pais = window.document.getElementById('ipais')
+                var res = window.document.getElementById('res')
+                var pais = (ipais.value)
+                if (pais === 'Brasil'){
+                    res.innerHTML = 'Brasileiro'
+                }else{
+                    res.innerHTML = 'Estrangeiro'
+                }
+        
+            }
+        
+        
+        
+        </script>
+        
+        
+    </main>
 </body>
 </html>

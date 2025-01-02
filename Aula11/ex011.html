@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Nacionalidade</title>
+</head>
+<body>
+    <h1>Teste aqui sua Nacionalidade</h1>
+    Pais: <input type="text" name="pais" id="ipais">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    
+
+    <script>
+        function verificar(){
+            var pais = window.document.getElementById('ipais')
+            var res = window.document.getElementById('res')
+            var pais = (ipais.value)
+            if (pais === 'Brasil'){
+                res.innerHTML = 'Brasileiro'
+            }else{
+                res.innerHTML = 'Estrangeiro'
+            }
+            
+        }
+       
+        
+    
+    </script>
+    
+    
+</body>
+</html>

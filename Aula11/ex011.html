@@ -39,7 +39,10 @@
 
         }
         #ipais{
-            padding: 10px;             
+            padding: 10px;  
+            border-radius: 5px;
+            border: none;
+
         }
         #botao{
             margin-top: 10px;
@@ -52,6 +55,9 @@
         #botao:hover{
             background-color: aqua;
         }
+       
+
+       
         div#res{
             margin-top: 20px;
             background-color: aqua;
@@ -59,6 +65,9 @@
             height: 50px;
             border-radius: 0px 10px;
             box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+            
+            align-items: center;
+          
             
 
         }
@@ -69,7 +78,7 @@
 <body>
     <main>
         <h1>Teste aqui sua Nacionalidade</h1>
-        Pais: <input type="text" name="pais" id="ipais">
+        Pais: <input type="text" name="pais" id="ipais" placeholder="Digite o seu País">
         <input type="button" value="verificar" onclick="verificar()" id="botao">
         <div id="res">
         </div>
